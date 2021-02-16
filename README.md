@@ -94,7 +94,8 @@ Due to python file depencencies i have not managed to put the files in the diffe
 
 ## References
 
-* [Enunciat](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#windows)
+* [Enunciat](https://github.com/jordi-petit/lp-polimomis-2020)
+* [antlr4](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#windows)
 * [Graham's scan method](https://en.wikipedia.org/wiki/Graham_scan)
 * [Telegram bot](https://core.telegram.org/bots)
 * [Properties of convex polygons](https://es.wikipedia.org/wiki/Pol%C3%ADgono_convexo)
