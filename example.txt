@@ -1,0 +1,56 @@
+//This is a complete example, you can copy it and paste it on polyBot
+
+p1 := [-1 7 5 4 8 1 4 -5 -4 -4 -6 2]
+color p1, {1 0 0}
+print p1
+area p1
+perimeter p1
+vertices p1
+
+print "------------"
+
+p2 := [-6 6 -2 3 -2 -2 -5 -3 -10 -3 -11 3]
+color p2, {0 0 1}
+print p2
+centroid p2
+equal p1, p2
+inside p1, p2
+
+print "------------"
+
+p3 := [0 0 0 1 1 1 1 0]
+color p3, {1 0.5 0}
+print p3
+equal p3, p3
+inside p3, p1
+inside p1, p3
+
+print "------------"
+
+draw "image.png", p1, p2, p3
+draw "image2.png", p1*p2     //ha de tenir un nom diferent per no sobreescriure, pero pot tenir el mateix si els envies per separat
+
+p4 := p1+p2
+color p4, {0 1 0.5}
+print p4
+inside [-2 -3 -2 3 1 2 0 0 -1 -2], p4
+
+inter := p1*p2
+color inter,{0 0.7 0}
+
+draw "test.png", p1, p2, p3, p4
+draw "box1.png", #p4, p1, p2, p3, p4, inter
+draw "box2.png", #p4, p4, p1, p2, p3, inter
+
+print "------------"
+
+random := !15
+color random,{0.6 0.53 0.85}
+print random
+
+
+draw "boxRand.png", #p4, p4, p1, p2, p3, inter, random
+
+
+
+
